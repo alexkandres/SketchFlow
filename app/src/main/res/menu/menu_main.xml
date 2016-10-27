@@ -16,6 +16,12 @@
         app:showAsAction="always"/>
 
     <item
+        android:id="@+id/line_action"
+        android:orderInCategory="100"
+        android:title="Shape"
+        app:showAsAction="always"/>
+
+    <item
         android:id="@+id/action_refresh"
         android:orderInCategory="100"
         android:title="Settings"
