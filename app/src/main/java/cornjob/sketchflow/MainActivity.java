@@ -21,4 +21,8 @@ public class MainActivity extends AppCompatActivity {
     protected  void testing(){
 
     }
+
+    protected void testing1(){
+
+    }
 }
