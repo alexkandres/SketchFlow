@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 
 /**
@@ -33,7 +34,7 @@ public class canvasFragment extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
-        inflater.inflate(R.menu.menu_main, menu);
+        inflater.inflate(R.menu.options, menu);
     }
 
     @Override
@@ -44,6 +45,8 @@ public class canvasFragment extends Fragment {
         if(id == R.id.load){
             Intent intent = new Intent(getActivity(), LoadActivity.class);
             startActivity(intent);
+        } else if (id == R.id.red_action) {
+            Toast.makeText(getActivity(), "Red Color Selected!", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }
